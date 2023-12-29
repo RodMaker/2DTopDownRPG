@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 4697358664380417366}
   - component: {fileID: 2673526509697760831}
   - component: {fileID: 4921510852465444132}
+  - component: {fileID: 3685076001111940872}
+  - component: {fileID: 7754085576012520590}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Untagged
@@ -210,3 +212,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e0413175bfc04498a079999a81b973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathVFXPrefab: {fileID: 6693598326321845063, guid: af446ae90572c4d419e447ba13e5d800, type: 3}
+--- !u!114 &3685076001111940872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232233232416917116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c17267edd72d5541be3adf9d50ea68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &7754085576012520590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232233232416917116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80044eaf31ea1e446beb4f54117d2899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 405ca94f54c5c1047b50cb2df99c77eb, type: 2}
+  restoreDefaultMatTime: 0.2
