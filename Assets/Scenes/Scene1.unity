@@ -3901,6 +3901,7 @@ GameObject:
   - component: {fileID: 227490127}
   - component: {fileID: 227490129}
   - component: {fileID: 227490128}
+  - component: {fileID: 227490130}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -8259,6 +8260,18 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &227490130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227490123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff0b75900bf9324ebe626f0feee0a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &281484881
 GameObject:
   m_ObjectHideFlags: 0
