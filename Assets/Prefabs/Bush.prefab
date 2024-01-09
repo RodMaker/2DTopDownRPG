@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5133470482733689759}
   - component: {fileID: 6002962248270240913}
   - component: {fileID: 8890761635956085934}
+  - component: {fileID: 2824428192781447760}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257780005703046642}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5133470482733689759
 SpriteRenderer:
@@ -134,3 +135,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 6853827120705283692, guid: a88421511cd64584eb46958742a561c4, type: 3}
+--- !u!114 &2824428192781447760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257780005703046642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d1526d36614e948a370708306a5816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoinPrefab: {fileID: 8665864511122482029, guid: 49228dd95f49713429266377c950ed62, type: 3}
