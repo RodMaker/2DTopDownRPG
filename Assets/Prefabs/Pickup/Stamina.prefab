@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3341315084579777366}
   - component: {fileID: 2992451056887564791}
-  - component: {fileID: 8530227049665241935}
   - component: {fileID: 8016093853338437570}
   - component: {fileID: 815378329279571899}
   - component: {fileID: 199327617238639405}
+  - component: {fileID: 4724407275587707505}
   m_Layer: 0
-  m_Name: Gold Coin
+  m_Name: Stamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3356f3229a353754ca338ea74ae9dd6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 761318546, guid: e0fc6ba265a95c642a53290540ff1517, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: aef3123581991c04fbae7c722bb921a9, type: 3}
+  m_Color: {r: 0.23255605, g: 0.735849, b: 0.24884397, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,27 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8530227049665241935
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8665864511122482029}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e94ad1b11aba1d548a281d6914962b83, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &8016093853338437570
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -183,6 +162,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1c5643b10e9d44b9120821a8bebe30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDistance: 5
+  pickUpType: 2
+  pickUpDistance: 4
   accelerationRate: 0.5
-  moveSpeed: 4
+  moveSpeed: 2
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.0585327
+      value: -0.0019950867
+      inSlope: -1.7013948
+      outSlope: -1.7013948
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08755429
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heightY: 1.5
+  popDuration: 0.5
+--- !u!114 &4724407275587707505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665864511122482029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb735fbf9f47e54ab6f8f01df596914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
