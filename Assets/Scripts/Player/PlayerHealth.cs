@@ -9,11 +9,12 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
 
-    private Slider healthSlider;
+    private Slider heartSlider;
     private int currentHealth;
     private bool canTakeDamage = true;
     private Knockback knockback;
     private Flash flash;
+    const string HEART_SLIDER_TEXT = "HeartSlider";
 
     protected override void Awake()
     {
@@ -83,12 +84,12 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void UpdateHealthSlider()
     {
-        if (healthSlider == null)
+        if (heartSlider == null)
         {
-            healthSlider = GameObject.Find("HeartSlider").GetComponent<Slider>();
+            heartSlider = GameObject.Find(HEART_SLIDER_TEXT).GetComponent<Slider>();
         }
 
-        healthSlider.maxValue = maxHealth;
-        healthSlider.value = currentHealth;
+        heartSlider.maxValue = maxHealth;
+        heartSlider.value = currentHealth;
     }
 }
